@@ -229,7 +229,7 @@ app.get('/api/bookings', (req, res) => {
 });
 
 // ---------- Start Server ----------
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log('');
   console.log('╔════════════════════════════════════════════╗');
   console.log('║   ✂️  Latino\'s Barbershop Server            ║');
@@ -237,4 +237,15 @@ app.listen(PORT, () => {
   console.log('║   📅 Booking system active                 ║');
   console.log('╚════════════════════════════════════════════╝');
   console.log('');
+});
+
+server.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    console.error(`\n❌ CRASH PREVENTED: Port ${PORT} is already in use by another application.`);
+    console.error(`   Please check if another project (like Batman Gym or Cheezarilla) is currently running.`);
+    console.error(`   To fix this, either stop the other server or change the PORT in your .env file.\n`);
+    process.exit(1);
+  } else {
+    console.error('Server error:', err);
+  }
 });
