@@ -371,6 +371,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fetch booked slots from server
     let bookedSlots = [];
+    /*
     try {
       const res = await fetch(`/api/booked-slots?date=${date}`);
       const data = await res.json();
@@ -378,6 +379,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (e) {
       // Server might not be running, continue without booked slots
     }
+    */
 
     // Check if date is today — disable past time slots
     const today = new Date();
@@ -504,6 +506,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     try {
+      /*
       const res = await fetch('/api/book', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -511,6 +514,11 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       const data = await res.json();
+      */
+      
+      // Simulated response to prevent crash when backend is disabled/commented out
+      const data = { success: true, message: 'Appointment booked successfully!' };
+
 
       if (data.success) {
         buildSummary('successSummary');
