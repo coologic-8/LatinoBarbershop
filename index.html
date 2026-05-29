@@ -1,0 +1,1016 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latino's Barbershop — Premium Cuts in Thousand Oaks, CA</title>
+    <meta
+      name="description"
+      content="Latino's Barbershop offers premium haircuts, clean fades, beard trims & expert grooming in Thousand Oaks, CA. Walk-ins welcome. Rated 4.5 stars."
+    />
+    <meta
+      name="keywords"
+      content="barbershop, haircut, fade, beard trim, Thousand Oaks, Latino's Barbershop, grooming"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ======== NAVBAR ======== -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-inner">
+        <!-- Logo -->
+        <a href="#home" class="nav-logo">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="6" cy="6" r="3" />
+            <circle cx="6" cy="18" r="3" />
+            <line x1="20" y1="4" x2="8.12" y2="15.88" />
+            <line x1="14.47" y1="14.48" x2="20" y2="20" />
+            <line x1="8.12" y1="8.12" x2="12" y2="12" />
+          </svg>
+          <span class="nav-logo-text">Latino's Barbershop</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#" class="nav-cta nav-cta-desktop" onclick="openBookingModal(); return false;"
+          >Book Appointment</a
+        >
+
+        <!-- Hamburger -->
+        <button class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="drawer-overlay"></div>
+    <div class="mobile-drawer">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a href="#" class="mobile-cta" onclick="openBookingModal(); return false;">Book Appointment</a>
+    </div>
+
+    <!-- ======== HERO ======== -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-stripe"></div>
+      <div class="hero-stripe-2"></div>
+
+      <div class="hero-content" data-aos="fade-up">
+        <p class="accent-label" style="margin-bottom: 1rem">
+          Thousand Oaks, CA
+        </p>
+        <h1>Where Style Meets Tradition</h1>
+        <p>
+          Premium cuts, clean fades &amp; expert grooming in Thousand Oaks, CA
+        </p>
+        <div class="hero-buttons">
+          <a href="#" class="btn-gold" onclick="openBookingModal(); return false;">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z" />
+            </svg>
+            Book Your Cut
+          </a>
+          <a href="#services" class="btn-outline-gold">See Our Services</a>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <a href="#trust" class="scroll-indicator">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </a>
+    </section>
+
+    <!-- ======== TRUST BAR ======== -->
+    <div class="trust-bar" id="trust">
+      <div class="trust-bar-inner">
+        <div class="trust-item">
+          <span class="trust-icon">⭐</span>
+          <span
+            ><strong data-count="4.5" data-suffix=" Stars">0 Stars</strong>
+            Rated on Google</span
+          >
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-icon">✂️</span>
+          <span
+            ><strong data-count="10" data-suffix="+">0</strong> Years Serving
+            the Community</span
+          >
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-icon">😊</span>
+          <span>Friendly &amp; Welcoming Atmosphere</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-icon">📍</span>
+          <span>Thousand Oaks, CA</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======== SERVICES ======== -->
+    <section id="services">
+      <div class="container" style="text-align: center">
+        <p class="accent-label" data-aos="fade-up">What We Offer</p>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+          Our Services
+        </h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+          Expert grooming services crafted for every style
+        </p>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="6" cy="6" r="3" />
+                <circle cx="6" cy="18" r="3" />
+                <line x1="20" y1="4" x2="8.12" y2="15.88" />
+                <line x1="14.47" y1="14.48" x2="20" y2="20" />
+                <line x1="8.12" y1="8.12" x2="12" y2="12" />
+              </svg>
+            </div>
+            <h3>Men's Haircut</h3>
+            <div class="service-price">$25+</div>
+            <p class="service-desc">
+              Classic cuts tailored to your style and face shape
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M12 2a5 5 0 0 1 5 5c0 2.76-2.24 5-5 5s-5-2.24-5-5a5 5 0 0 1 5-5z"
+                />
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="3" />
+              </svg>
+            </div>
+            <h3>Kids Haircut</h3>
+            <div class="service-price">$18+</div>
+            <p class="service-desc">Gentle, fun haircuts for the young ones</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M6 3v18" />
+                <path d="M18 3v18" />
+                <path d="M6 8c3 0 5 2 6 4s3 4 6 4" />
+                <path d="M6 16c3 0 5-2 6-4s3-4 6-4" />
+              </svg>
+            </div>
+            <h3>Beard Trim &amp; Shape</h3>
+            <div class="service-price">$15+</div>
+            <p class="service-desc">Precision beard grooming and sculpting</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="3" />
+                <path d="M3 12h18" />
+                <path d="M8 3v18" />
+                <path d="M16 3v18" />
+              </svg>
+            </div>
+            <h3>Fade &amp; Taper</h3>
+            <div class="service-price">$25+</div>
+            <p class="service-desc">Sharp fades from skin to classic tapers</p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 21h18" />
+                <path d="M12 3c-3 4-6 6-6 10a6 6 0 0 0 12 0c0-4-3-6-6-10z" />
+              </svg>
+            </div>
+            <h3>Full Shave</h3>
+            <div class="service-price">$20+</div>
+            <p class="service-desc">
+              Hot towel straight razor shave experience
+            </p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+            </div>
+            <h3>Hair + Beard Combo</h3>
+            <div class="service-price">$35+</div>
+            <p class="service-desc">
+              Complete grooming — haircut plus full beard service
+            </p>
+          </div>
+        </div>
+
+        <p class="services-note" data-aos="fade-up">
+          All prices may vary. Walk-ins welcome.
+        </p>
+      </div>
+    </section>
+
+    <!-- ======== ABOUT ======== -->
+    <section id="about" style="background: var(--bg-surface)">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-frame" data-aos="fade-right">
+            <img
+              src="images/about.png"
+              alt="Inside Latino's Barbershop — classic barber chairs and warm atmosphere"
+              loading="lazy"
+            />
+            <div class="about-image-watermark">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <circle cx="6" cy="6" r="3" />
+                <circle cx="6" cy="18" r="3" />
+                <line
+                  x1="20"
+                  y1="4"
+                  x2="8.12"
+                  y2="15.88"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <line
+                  x1="14.47"
+                  y1="14.48"
+                  x2="20"
+                  y2="20"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="about-text" data-aos="fade-left">
+            <p class="accent-label" style="margin-bottom: 0.5rem">About Us</p>
+            <h2>A Neighborhood Barbershop With Heart</h2>
+            <p>
+              At Latino's Barbershop, we're more than just a place to get a
+              haircut — we're a community. Our talented barbers, including our
+              beloved Tania, bring warmth, skill, and a genuine love for the
+              craft to every chair. Whether you're a longtime regular or a
+              first-time visitor, you'll leave looking sharp and feeling
+              welcome.
+            </p>
+            <ul class="about-highlights">
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Skilled, friendly barbers
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Relaxing, welcoming atmosphere
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Great for men, women &amp; kids
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Serving Thousand Oaks since day one
+              </li>
+            </ul>
+            <a href="#contact" class="link-gold">Meet Our Team →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== GALLERY ======== -->
+    <section id="gallery">
+      <div class="container" style="text-align: center">
+        <p class="accent-label" data-aos="fade-up">Our Work</p>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+          Fresh Cuts. Every Time.
+        </h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+          A look at our latest styles and grooming work
+        </p>
+
+        <div class="gallery-grid">
+          <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+            <img
+              src="images/gallery-fade.png"
+              alt="Clean fade haircut"
+              loading="lazy"
+            />
+            <div class="gallery-overlay"><span>Clean Fade</span></div>
+          </div>
+          <div class="gallery-item" data-aos="fade-up" data-aos-delay="150">
+            <img
+              src="images/gallery-beard.png"
+              alt="Beard trim"
+              loading="lazy"
+            />
+            <div class="gallery-overlay"><span>Beard Trim</span></div>
+          </div>
+          <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+            <img
+              src="images/gallery-shave.png"
+              alt="Classic shave"
+              loading="lazy"
+            />
+            <div class="gallery-overlay"><span>Classic Shave</span></div>
+          </div>
+          <div class="gallery-item" data-aos="fade-up" data-aos-delay="250">
+            <img
+              src="images/gallery-combo.png"
+              alt="Hair and beard combo"
+              loading="lazy"
+            />
+            <div class="gallery-overlay"><span>Hair + Beard</span></div>
+          </div>
+          <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+            <img
+              src="images/about.png"
+              alt="Barbershop atmosphere"
+              loading="lazy"
+            />
+            <div class="gallery-overlay"><span>The Shop</span></div>
+          </div>
+          <div class="gallery-item" data-aos="fade-up" data-aos-delay="350">
+            <img
+              src="images/gallery-fade.png"
+              alt="Taper fade"
+              loading="lazy"
+            />
+            <div class="gallery-overlay"><span>Taper Fade</span></div>
+          </div>
+        </div>
+
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener"
+          class="gallery-follow"
+          data-aos="fade-up"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+          </svg>
+          Follow us for more →
+        </a>
+      </div>
+    </section>
+
+    <!-- ======== REVIEWS ======== -->
+    <section id="reviews" style="background: var(--bg-surface)">
+      <div class="container" style="text-align: center">
+        <p class="accent-label" data-aos="fade-up">Testimonials</p>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+          What Our Clients Say
+        </h2>
+        <p class="reviews-subtitle" data-aos="fade-up" data-aos-delay="150">
+          ⭐ 4.5 stars · 68+ reviews on Google
+        </p>
+
+        <div class="reviews-container">
+          <!-- Review 1 -->
+          <div
+            class="review-card carousel-active"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <span class="review-quote">&ldquo;</span>
+            <p>
+              I went in for a beard trim. My barber Tania was super sweet. She
+              did a fantastic job... She knows her craft and brings so much
+              warmth to the chair.
+            </p>
+            <div class="review-stars">★★★★★</div>
+            <div class="review-source">— Verified Google Review</div>
+          </div>
+          <!-- Review 2 -->
+          <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+            <span class="review-quote">&ldquo;</span>
+            <p>
+              EVERYONE at this barbershop is amazing! Always a great environment
+              and extremely friendly!
+            </p>
+            <div class="review-stars">★★★★★</div>
+            <div class="review-source">— Verified Google Review</div>
+          </div>
+          <!-- Review 3 -->
+          <div class="review-card" data-aos="fade-up" data-aos-delay="300">
+            <span class="review-quote">&ldquo;</span>
+            <p>
+              Great place for a haircut. The lady barber in the 1st chair does a
+              great job. I've been going to the same barber for years.
+            </p>
+            <div class="review-stars">★★★★★</div>
+            <div class="review-source">— Verified Google Review</div>
+          </div>
+        </div>
+
+        <div class="review-carousel-dots">
+          <button class="review-dot active" aria-label="Review 1"></button>
+          <button class="review-dot" aria-label="Review 2"></button>
+          <button class="review-dot" aria-label="Review 3"></button>
+        </div>
+
+        <div style="margin-top: 2.5rem" data-aos="fade-up">
+          <a
+            href="https://www.google.com/maps/place/Latino's+Barbershop/@34.1812,-118.8762,17z/"
+            target="_blank"
+            rel="noopener"
+            class="btn-outline-gold"
+            >Read All Reviews on Google</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CTA BANNER ======== -->
+    <section class="cta-banner">
+      <div class="cta-banner-bg"></div>
+      <div class="container" data-aos="zoom-in">
+        <h2 class="section-title">Ready for a Fresh Cut?</h2>
+        <p>Walk-ins welcome — or call ahead to secure your spot.</p>
+        <div class="cta-buttons">
+          <a href="tel:+18054979653" class="btn-outline-gold">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+              />
+            </svg>
+            Call Now: (805) 497-9653
+          </a>
+          <a
+            href="https://www.google.com/maps/dir//1801+E+Thousand+Oaks+Blvd,+Thousand+Oaks,+CA+91362"
+            target="_blank"
+            rel="noopener"
+            class="btn-gold"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Get Directions
+          </a>
+        </div>
+      </div>
+
+      <!-- Barber pole decoration -->
+      <div class="barber-pole-decoration">
+        <div class="barber-pole-stripes"></div>
+      </div>
+    </section>
+
+    <!-- ======== CONTACT ======== -->
+    <section id="contact">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 3rem">
+          <p class="accent-label" data-aos="fade-up">Get In Touch</p>
+          <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+            Contact &amp; Hours
+          </h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Info -->
+          <div data-aos="fade-right">
+            <div class="contact-info-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <div>
+                <strong>Address</strong><br />
+                <a
+                  href="https://www.google.com/maps/dir//1801+E+Thousand+Oaks+Blvd,+Thousand+Oaks,+CA+91362"
+                  target="_blank"
+                  rel="noopener"
+                  >1801 E Thousand Oaks Blvd,<br />Thousand Oaks, CA 91362</a
+                >
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              <div>
+                <strong>Phone</strong><br />
+                <a href="tel:+18054979653">(805) 497-9653</a>
+              </div>
+            </div>
+
+            <div class="map-embed">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3297.26!2d-118.878!3d34.181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e8238f1e2c0001%3A0x4a0c0d8e5e2c0001!2s1801%20E%20Thousand%20Oaks%20Blvd%2C%20Thousand%20Oaks%2C%20CA%2091362!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Latino's Barbershop Location"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Right: Hours -->
+          <div data-aos="fade-left">
+            <h3
+              style="
+                font-size: 1.3rem;
+                margin-bottom: 1.5rem;
+                color: var(--gold);
+              "
+            >
+              Business Hours
+            </h3>
+            <table class="hours-table">
+              <tr>
+                <td>Monday</td>
+                <td>9:00 AM – 6:00 PM</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>9:00 AM – 6:00 PM</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>9:00 AM – 6:00 PM</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>9:00 AM – 6:00 PM</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>9:00 AM – 6:00 PM</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>9:00 AM – 6:00 PM</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>9:00 AM – 3:00 PM</td>
+              </tr>
+            </table>
+            <div class="walkin-badge">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Walk-ins Welcome
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <!-- Left -->
+        <div>
+          <div class="footer-logo">Latino's Barbershop</div>
+          <p class="footer-tagline">Cuts you can count on.</p>
+        </div>
+        <!-- Center -->
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Right -->
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            1801 E Thousand Oaks Blvd
+          </p>
+          <p>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+              />
+            </svg>
+            (805) 497-9653
+          </p>
+          <div class="social-icons">
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <!-- Facebook -->
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+            </a>
+            <!-- Google Maps -->
+            <a
+              href="https://www.google.com/maps/dir//1801+E+Thousand+Oaks+Blvd,+Thousand+Oaks,+CA+91362"
+              target="_blank"
+              rel="noopener"
+              aria-label="Google Maps"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Latino's Barbershop · Thousand Oaks, CA · All Rights
+        Reserved
+      </div>
+    </footer>
+
+    <!-- ======== BOOKING MODAL ======== -->
+    <div class="booking-overlay" id="bookingOverlay"></div>
+    <div class="booking-modal" id="bookingModal">
+      <!-- Close Button -->
+      <button class="booking-close" id="bookingClose" aria-label="Close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <!-- Progress Steps -->
+      <div class="booking-progress">
+        <div class="progress-step active" data-step="1"><span>1</span><small>Service & Time</small></div>
+        <div class="progress-line"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="progress-step" data-step="2"><span>2</span><small>Your Details</small></div>
+        <div class="progress-line"><div class="progress-fill"></div></div>
+        <div class="progress-step" data-step="3"><span>3</span><small>Confirm</small></div>
+      </div>
+
+      <!-- Step 1: Service + Date + Time -->
+      <div class="booking-step" id="bookingStep1">
+        <h2 class="booking-title">Book Your Appointment</h2>
+        <p class="booking-subtitle">Select your service, date, and preferred time</p>
+
+        <div class="booking-form-group">
+          <label for="bookService">Service</label>
+          <select id="bookService" class="booking-input">
+            <option value="">Choose a service...</option>
+            <option value="Men's Haircut — $25+">Men's Haircut — $25+</option>
+            <option value="Kids Haircut — $18+">Kids Haircut — $18+</option>
+            <option value="Beard Trim & Shape — $15+">Beard Trim & Shape — $15+</option>
+            <option value="Fade & Taper — $25+">Fade & Taper — $25+</option>
+            <option value="Full Shave — $20+">Full Shave — $20+</option>
+            <option value="Hair + Beard Combo — $35+">Hair + Beard Combo — $35+</option>
+          </select>
+        </div>
+
+        <div class="booking-form-group">
+          <label for="bookDate">Date</label>
+          <input type="date" id="bookDate" class="booking-input" />
+        </div>
+
+        <div class="booking-form-group">
+          <label>Available Time Slots</label>
+          <div class="time-slots" id="timeSlots">
+            <p class="time-slots-hint">Select a date to see available times</p>
+          </div>
+        </div>
+
+        <div class="booking-actions">
+          <button class="btn-gold booking-btn" id="btnNext1" disabled>Next Step →</button>
+        </div>
+      </div>
+
+      <!-- Step 2: Customer Details -->
+      <div class="booking-step" id="bookingStep2" style="display:none;">
+        <h2 class="booking-title">Your Details</h2>
+        <p class="booking-subtitle">Tell us who you are so we can confirm your appointment</p>
+
+        <div class="booking-form-group">
+          <label for="bookName">Full Name *</label>
+          <input type="text" id="bookName" class="booking-input" placeholder="e.g. John Doe" required />
+        </div>
+
+        <div class="booking-form-group">
+          <label for="bookPhone">Phone Number *</label>
+          <input type="tel" id="bookPhone" class="booking-input" placeholder="e.g. (805) 555-1234" required />
+        </div>
+
+        <div class="booking-form-group">
+          <label for="bookEmail">Email <span style="color: var(--text-muted); font-weight:400;">(optional)</span></label>
+          <input type="email" id="bookEmail" class="booking-input" placeholder="e.g. john@email.com" />
+        </div>
+
+        <div class="booking-form-group">
+          <label for="bookNotes">Notes <span style="color: var(--text-muted); font-weight:400;">(optional)</span></label>
+          <textarea id="bookNotes" class="booking-input" rows="3" placeholder="Any special requests or preferences..."></textarea>
+        </div>
+
+        <div class="booking-actions booking-actions-split">
+          <button class="btn-outline-gold booking-btn" id="btnBack2">← Back</button>
+          <button class="btn-gold booking-btn" id="btnNext2">Review Booking →</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Confirmation Review -->
+      <div class="booking-step" id="bookingStep3" style="display:none;">
+        <h2 class="booking-title">Review & Confirm</h2>
+        <p class="booking-subtitle">Please review your booking details below</p>
+
+        <div class="booking-summary" id="bookingSummary"></div>
+
+        <div class="booking-actions booking-actions-split">
+          <button class="btn-outline-gold booking-btn" id="btnBack3">← Edit</button>
+          <button class="btn-gold booking-btn" id="btnConfirm">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Confirm Appointment
+          </button>
+        </div>
+      </div>
+
+      <!-- Success Screen -->
+      <div class="booking-step" id="bookingSuccess" style="display:none;">
+        <div class="booking-success-content">
+          <div class="success-checkmark">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="9 12 12 15 16 10" />
+            </svg>
+          </div>
+          <h2 class="booking-title" style="color: var(--gold);">Appointment Confirmed!</h2>
+          <p class="booking-subtitle">We've reserved your spot. You'll also receive a confirmation notification.</p>
+          <div class="booking-summary" id="successSummary"></div>
+          <div class="booking-actions" style="margin-top: 1.5rem;">
+            <a href="tel:+18054979653" class="btn-outline-gold booking-btn" style="font-size: 0.85rem;">📞 Call to Modify</a>
+            <button class="btn-gold booking-btn" onclick="closeBookingModal()">Done</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loading Overlay -->
+      <div class="booking-loading" id="bookingLoading" style="display:none;">
+        <div class="booking-spinner"></div>
+        <p>Booking your appointment...</p>
+      </div>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
+
